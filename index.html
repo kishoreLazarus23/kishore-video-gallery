@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="title">My Video Gallery</h1>
+
+<div class="gallery">
+    <video src="videos/video1.mp4" class="video"></video>
+    <video src="videos/video2.mp4" class="video"></video>
+    <video src="videos/video3.mp4" class="video"></video>
+    <video src="videos/video4.mp4" class="video"></video>
+    <video src="videos/video5.mp4" class="video"></video>
+    <video src="videos/video6.mp4" class="video"></video>
+    </div>
+
+<!-- FULLSCREEN PLAYER -->
+<div class="popup" id="popup">
+    <span id="close">&times;</span>
+    <button class="nav prev" onclick="prevVideo()">⟨</button>
+    <video id="popupVideo" controls></video>
+    <button class="nav next" onclick="nextVideo()">⟩</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
